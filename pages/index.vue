@@ -1,6 +1,23 @@
-<script>
-</script>
+<script></script>
 
 <template>
-  <h1>Index page</h1>
+  <main class="welcome-container">
+    <section>
+      <h1>Welcome to KeleMC &lt;3</h1>
+      <p><b>满足探索欲与创造性，只为快乐</b></p>
+      <p>网站建设中...</p>
+      <p>© 2024 KeleMC. All Rights Reserved.</p>
+      <p>
+        Not an official Minecraft product. Not approved by or associated with
+        Mojang.
+      </p>
+      <a target="_blank" href="https://beian.miit.gov.cn">
+        粤ICP备2024192097号
+      </a>
+    </section>
+  </main>
 </template>
+
+<style lang="scss">
+@import "~/assets/scss/index.scss";
+</style>
