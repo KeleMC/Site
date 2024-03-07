@@ -12,7 +12,7 @@
         Mojang.
       </p>
       <a target="_blank" href="https://beian.miit.gov.cn">
-        粤ICP备2024192097号
+        粤ICP备2024192097号-1
       </a>
     </section>
   </main>
