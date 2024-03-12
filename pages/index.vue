@@ -20,14 +20,13 @@
         >
           粤ICP备2024192097号-1
         </a>
-
-        <img class="beian-logo" src="/beianLogo.png" alt="beian" />
         <a
           class="beian-text"
           href="https://beian.mps.gov.cn/#/query/webSearch?code=44030002002681"
           rel="noreferrer"
           target="_blank"
         >
+          <img class="beian-logo" src="/beianLogo.png" alt="beian" />
           粤公网安备44030002002681
         </a>
       </span>
@@ -39,9 +38,11 @@
 @import '~/assets/scss/index.scss';
 
 .beian-text {
+  display: inline-block;
   text-decoration: none;
   font-size: 14px;
-  color: #B2B2B2;
+  color: #b2b2b2;
+  margin-bottom: 10px;
 }
 
 .beian-logo {
