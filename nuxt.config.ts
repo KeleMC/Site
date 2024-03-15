@@ -6,6 +6,10 @@ export default defineNuxtConfig({
         {
           name: 'baidu-site-verification',
           content: 'codeva-vxn7O0s0kt'
+        },
+        {
+          name: 'sogou_site_verification',
+          content: 'ZgVp7G1uPg'
         }
       ]
     }
