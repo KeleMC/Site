@@ -21,6 +21,5 @@ export default defineNuxtConfig({
     defaultLocale: 'cn' // not needed if you have @nuxtjs/i18n installed
   },
   devtools: { enabled: true },
-  css: ['~/assets/css/normalize.css'],
   modules: ['@nuxtjs/i18n', '@nuxtjs/seo', '@nuxtjs/sitemap']
 })
