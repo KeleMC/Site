@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         },
         {
           name: 'sogou_site_verification',
-          content: 'ZgVp7G1uPg'
+          content: 'HRQwGCTzs7'
         }
       ]
     }
