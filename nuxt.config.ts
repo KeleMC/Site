@@ -21,5 +21,13 @@ export default defineNuxtConfig({
     defaultLocale: 'cn' // not needed if you have @nuxtjs/i18n installed
   },
   devtools: { enabled: true },
-  modules: ['@nuxtjs/i18n', '@nuxtjs/seo', '@nuxtjs/sitemap']
+  modules: [
+    '@nuxtjs/i18n',
+    '@nuxtjs/seo',
+    '@nuxtjs/sitemap',
+    '@tdesign-vue-next/nuxt'
+  ],
+  tdesign: {
+    resolveIcons: true
+  }
 })
