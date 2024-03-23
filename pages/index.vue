@@ -111,7 +111,8 @@ const serveraddress = ref('play.kelemc.fun')
       </footer>
     </div>
     <div class="show">
-      <Swiper />
+      <!-- <Swiper /> -->
+      <p>建设中...</p>
     </div>
   </div>
 </template>
