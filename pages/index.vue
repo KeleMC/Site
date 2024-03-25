@@ -111,6 +111,7 @@ const serveraddress = ref('play.kelemc.fun')
       </footer>
     </div>
     <div class="show">
+      
       <!-- <Swiper /> -->
       <p>建设中...</p>
     </div>
@@ -145,22 +146,39 @@ const serveraddress = ref('play.kelemc.fun')
   padding: 0px 24px 0px 36px;
   margin: 0px auto;
   max-width: 100%;
-  width: 25%;
+  width: 100%;
   flex-direction: column;
   -webkit-box-align: center;
   -webkit-box-pack: center;
   justify-content: center;
+
+  @media screen and (min-width: 800px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 25%;
+  }
 }
 
 .show {
   background: rgb(249, 249, 249);
-  width: 75%;
-  display: flex;
+  width: 0%;
+  display: none;
   margin: 0px auto;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
+
+  @media screen and (min-width: 800px) {
+    width: 50%;
+    display: flex;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 75%;
+    display: flex;
+  }
 }
 
 .content {
