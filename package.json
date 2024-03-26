@@ -12,9 +12,9 @@
   "dependencies": {
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
-    "nuxt": "^3.10.3",
+    "nuxt": "^3.11.1",
     "tdesign-vue-next": "^1.9.0",
-    "vue": "^3.4.19",
+    "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
@@ -22,6 +22,6 @@
     "@nuxtjs/seo": "2.0.0-rc.9",
     "@nuxtjs/sitemap": "^5.1.2",
     "@tdesign-vue-next/nuxt": "^0.1.2",
-    "sass": "^1.71.1"
+    "sass": "^1.72.0"
   }
 }
