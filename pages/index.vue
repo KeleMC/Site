@@ -64,7 +64,7 @@ const serveraddress = ref('play.kelemc.fun')
             />
           </p>
           <p>
-            <a href="https://qm.qq.com/q/Y1Dg8fsFUY">QQ群🐧{{ qqNumber }}</a>
+            <a target="_blank" href="https://qm.qq.com/q/Y1Dg8fsFUY">QQ群🐧{{ qqNumber }}</a>
             <t-icon
               class="icon icon-click"
               name="copy"
