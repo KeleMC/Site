@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import Swiper from './Swiper.vue'
 import { MessagePlugin } from 'tdesign-vue-next'
+import { useClipboard } from '@vueuse/core'
 
 interface LogList {
   title: string
@@ -9,22 +10,29 @@ interface LogList {
   date: string
 }
 
-async function copyToClipboard(text: string) {
+const qqNumber = ref('1067977130')
+const serveraddress = ref('play.kelemc.fun')
+
+const { copy, isSupported } = useClipboard()
+
+function copyToClipboard(copyText: string) {
   try {
-    if (!navigator.clipboard) {
+    if (!isSupported) {
       MessagePlugin.error('浏览器剪贴板不支持')
       return
     }
-    await navigator.clipboard.writeText(text)
-    MessagePlugin.success(text + ' 已复制到剪切板')
+    copy(copyText)
+      .then(() => {
+        MessagePlugin.success(copyText + ' 已复制到剪切板')
+      })
+      .catch(() => {
+        MessagePlugin.error('复制失败,请重试')
+      })
   } catch (err) {
-    alert('未知错误,请查看 Console')
+    alert('未知错误' + err)
     console.log(err)
   }
 }
-
-const qqNumber = ref('1067977130')
-const serveraddress = ref('play.kelemc.fun')
 </script>
 
 <template>
@@ -64,7 +72,9 @@ const serveraddress = ref('play.kelemc.fun')
             />
           </p>
           <p>
-            <a target="_blank" href="https://qm.qq.com/q/Y1Dg8fsFUY">QQ群🐧{{ qqNumber }}</a>
+            <a target="_blank" href="https://qm.qq.com/q/Y1Dg8fsFUY"
+              >QQ群🐧{{ qqNumber }}</a
+            >
             <t-icon
               class="icon icon-click"
               name="copy"
@@ -111,7 +121,6 @@ const serveraddress = ref('play.kelemc.fun')
       </footer>
     </div>
     <div class="show">
-      
       <!-- <Swiper /> -->
       <p>建设中...</p>
     </div>

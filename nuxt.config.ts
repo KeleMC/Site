@@ -25,7 +25,8 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/seo',
     '@nuxtjs/sitemap',
-    '@tdesign-vue-next/nuxt'
+    '@tdesign-vue-next/nuxt',
+    '@vueuse/nuxt'
   ],
   tdesign: {
     resolveIcons: true

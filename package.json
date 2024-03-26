@@ -22,6 +22,8 @@
     "@nuxtjs/seo": "2.0.0-rc.9",
     "@nuxtjs/sitemap": "^5.1.2",
     "@tdesign-vue-next/nuxt": "^0.1.2",
+    "@vueuse/core": "^10.9.0",
+    "@vueuse/nuxt": "^10.9.0",
     "sass": "^1.72.0"
   }
 }
