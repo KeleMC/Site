@@ -1,6 +1,6 @@
 <script setup lang="tsx">
 import { ref } from 'vue'
-import Swiper from './Swiper.vue'
+import Swiper from '~/components/Swiper.vue'
 import { MessagePlugin } from 'tdesign-vue-next'
 import { useClipboard } from '@vueuse/core'
 
