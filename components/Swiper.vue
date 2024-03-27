@@ -1,10 +1,11 @@
 <script setup lang="tsx">
 import { ref } from 'vue'
+import { Loading, type ImageProps, type ButtonProps } from 'tdesign-vue-next'
 
 defineProps<{
   name?: string
   desc?: string
-  contentList: string
+  contentList?: string
 }>()
 
 const images = ref<string[]>([
@@ -17,25 +18,79 @@ const images = ref<string[]>([
   '/images/7.png'
 ])
 
-const configProps = {
-  navigationType: 'dots',
-  showSlideBtn: 'hover',
-  placement: 'inside'
+const renderPlaceholder: ImageProps['placeholder'] = () => (
+  <img class='.swiper-img' src='/logo.png' />
+)
+
+const renderLoading: ImageProps['loading'] = () => (
+  <div
+    style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      width: '100%',
+      height: '100%',
+      background: 'rgba(255,255,255,.4)',
+      backdropFilter: 'blur(10px)'
+    }}
+  >
+    <Loading
+      delay={0}
+      fullscreen={false}
+      indicator
+      inheritColor={false}
+      loading
+      preventScrollThrough
+      showOverlay
+      size='small'
+    />
+  </div>
+)
+
+const renderRefreshIcon: ButtonProps['icon'] = () => {
+  return <t-icon name='refresh' />
 }
 </script>
 <template>
-  <!-- <t-swiper
-    :navigation="{ type: configProps.navigationType }"
+  <t-swiper
+    class="swiper"
+    :navigation="{ type: 'dots', placement: 'inside', showSlideBtn: 'hover' }"
     trigger="click"
-    :duration="300"
-    :interval="2000"
+    animation="fade"
+    :duration="800"
+    :interval="3000"
+    type="default"
   >
     <t-swiper-item v-for="(img, index) in images" :key="index">
-      <img :src="img" :alt="`Image- ${index}`" />
+      <t-image
+        class="swiper-img"
+        :src="img"
+        :lazy="true"
+        :alt="`Image- ${index}`"
+        :loading="renderLoading"
+        :placeholder="renderPlaceholder"
+        fit="cover"
+      />
     </t-swiper-item>
-  </t-swiper> -->
-  <div>
-    <p>建设中...</p>
-  </div>
+  </t-swiper>
 </template>
-<style scoped></style>
+<style scoped>
+.swiper {
+  display: block;
+  position: relative;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+
+  .swiper-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+</style>

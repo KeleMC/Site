@@ -45,6 +45,10 @@ function copyToClipboard(copyText: string) {
           <p>「可勒世界」满足<b>探索欲</b>与<b>创造性</b>，只为<b>快乐</b>~</p>
         </t-space>
 
+        <div class="intro-show">
+          <Swiper />
+        </div>
+
         <t-space size="0" direction="vertical" class="feature">
           <p>➡️原汁原味，保持 Minecraft 的原生玩法</p>
           <p>➡️养老生存，在安全的地方舒适种田</p>
@@ -121,8 +125,7 @@ function copyToClipboard(copyText: string) {
       </footer>
     </div>
     <div class="show">
-      <!-- <Swiper /> -->
-      <p>建设中...</p>
+      <Swiper />
     </div>
   </div>
 </template>
@@ -181,19 +184,35 @@ function copyToClipboard(copyText: string) {
 
   @media screen and (min-width: 800px) {
     width: 50%;
-    display: flex;
+    display: block;
   }
 
   @media screen and (min-width: 1600px) {
     width: 75%;
-    display: flex;
+    display: block;
+  }
+}
+
+.intro-show {
+  width: 100%;
+  display: block;
+  margin: 20px 0;
+  height: 500px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+
+  @media screen and (min-width: 800px) {
+    display: none;
+    margin: 0;
   }
 }
 
 .content {
   display: block;
   margin: auto 0px;
-  padding: 96px 0px auto;
+  padding: 96px 0 0;
 
   .title {
     display: flex;
