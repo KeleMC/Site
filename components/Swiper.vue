@@ -9,17 +9,17 @@ defineProps<{
 }>()
 
 const images = ref<string[]>([
-  '/images/1.png',
-  '/images/2.png',
-  '/images/3.png',
-  '/images/4.png',
-  '/images/5.png',
-  '/images/6.png',
-  '/images/7.png'
+  '/images/1-o.webp',
+  '/images/2-o.webp',
+  '/images/3-o.webp',
+  '/images/4-o.webp',
+  '/images/5-o.webp',
+  '/images/6-o.webp',
+  '/images/7-o.webp'
 ])
 
 const renderPlaceholder: ImageProps['placeholder'] = () => (
-  <img class='.swiper-img' src='/logo.png' />
+  <img class='.swiper-img' src='/logo-64.png' />
 )
 
 const renderLoading: ImageProps['loading'] = () => (
