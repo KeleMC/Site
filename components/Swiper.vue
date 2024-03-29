@@ -78,7 +78,6 @@ const renderRefreshIcon: ButtonProps['icon'] = () => {
 .swiper {
   display: block;
   position: relative;
-  height: 100%;
   margin: auto;
   overflow: hidden;
 
@@ -86,7 +85,7 @@ const renderRefreshIcon: ButtonProps['icon'] = () => {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: fill;
     position: absolute;
     top: 50%;
     left: 50%;

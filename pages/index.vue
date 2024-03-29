@@ -138,7 +138,7 @@ function copyToClipboard(copyText: string) {
   display: flex;
   flex-direction: row;
   min-height: 100vh;
-  min-width: 540px;
+  min-width: 100vw;
 
   a {
     text-decoration: none;
@@ -154,21 +154,21 @@ function copyToClipboard(copyText: string) {
 .intro {
   display: flex;
   box-sizing: border-box;
-  max-width: 100%;
-  padding: 0px 24px 0px 36px;
-  margin: 0px auto;
-  max-width: 100%;
+  padding: 0px;
+  margin: 0px 20px;
   width: 100%;
   flex-direction: column;
   -webkit-box-align: center;
   -webkit-box-pack: center;
   justify-content: center;
 
-  @media screen and (min-width: 800px) {
-    width: 50%;
+  @media screen and (min-width: 1000px) {
+    width: 40%;
+    padding: 0px 10px;
   }
   @media screen and (min-width: 1600px) {
     width: 25%;
+    padding: 0px 24px 0px 36px;
   }
 }
 
@@ -182,8 +182,8 @@ function copyToClipboard(copyText: string) {
   -webkit-box-pack: center;
   justify-content: center;
 
-  @media screen and (min-width: 800px) {
-    width: 50%;
+  @media screen and (min-width: 1000px) {
+    width: 60%;
     display: block;
   }
 
@@ -194,16 +194,16 @@ function copyToClipboard(copyText: string) {
 }
 
 .intro-show {
-  width: 100%;
+  width: auto;
+  min-height: 35vh;
   display: block;
   margin: 20px 0;
-  height: 500px;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1000px) {
     display: none;
     margin: 0;
   }
@@ -212,7 +212,7 @@ function copyToClipboard(copyText: string) {
 .content {
   display: block;
   margin: auto 0px;
-  padding: 96px 0 0;
+  padding: 65px 0 0;
 
   .title {
     display: flex;
@@ -220,8 +220,12 @@ function copyToClipboard(copyText: string) {
     -webkit-box-align: center;
     align-items: flex-start;
 
+    @media screen and (max-width: 1000px) {
+      align-items: center;
+    }
+
     img {
-      max-width: 800px;
+      max-width: 95%;
       display: block;
       height: 80px;
     }
