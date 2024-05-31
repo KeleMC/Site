@@ -227,7 +227,7 @@ function copyToClipboard(copyText: string) {
     img {
       max-width: 95%;
       display: block;
-      height: 80px;
+      height: 268px;
     }
   }
 

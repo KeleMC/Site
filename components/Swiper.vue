@@ -32,8 +32,7 @@ const renderLoading: ImageProps['loading'] = () => (
       height: '100%',
       background: 'rgba(255,255,255,.4)',
       backdropFilter: 'blur(10px)'
-    }}
-  >
+    }}>
     <Loading
       delay={0}
       fullscreen={false}
@@ -59,8 +58,7 @@ const renderRefreshIcon: ButtonProps['icon'] = () => {
     animation="fade"
     :duration="800"
     :interval="3000"
-    type="default"
-  >
+    type="default">
     <t-swiper-item v-for="(img, index) in images" :key="index">
       <t-image
         class="swiper-img"
@@ -69,8 +67,7 @@ const renderRefreshIcon: ButtonProps['icon'] = () => {
         :alt="`Image- ${index}`"
         :loading="renderLoading"
         :placeholder="renderPlaceholder"
-        fit="cover"
-      />
+        fit="cover" />
     </t-swiper-item>
   </t-swiper>
 </template>
