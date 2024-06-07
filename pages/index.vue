@@ -72,8 +72,7 @@ function copyToClipboard(copyText: string) {
             <t-icon
               class="icon icon-click"
               name="copy"
-              @click="copyToClipboard(serveraddress)"
-            />
+              @click="copyToClipboard(serveraddress)" />
           </p>
           <p>
             <a target="_blank" href="https://qm.qq.com/q/Y1Dg8fsFUY"
@@ -82,8 +81,7 @@ function copyToClipboard(copyText: string) {
             <t-icon
               class="icon icon-click"
               name="copy"
-              @click="copyToClipboard(qqNumber)"
-            />
+              @click="copyToClipboard(qqNumber)" />
           </p>
         </t-space>
 
@@ -116,8 +114,7 @@ function copyToClipboard(copyText: string) {
           <a
             href="https://beian.mps.gov.cn/#/query/webSearch?code=44030002002681"
             rel="noreferrer"
-            target="_blank"
-          >
+            target="_blank">
             <img class="beian-logo" src="/beianLogo.png" alt="beian" />
             粤公网安备44030002002681
           </a>
@@ -166,6 +163,7 @@ function copyToClipboard(copyText: string) {
     width: 40%;
     padding: 0px 10px;
   }
+
   @media screen and (min-width: 1600px) {
     width: 25%;
     padding: 0px 24px 0px 36px;
@@ -225,9 +223,9 @@ function copyToClipboard(copyText: string) {
     }
 
     img {
-      max-width: 95%;
+      max-width: 100%;
       display: block;
-      height: 268px;
+      //height: 268px;
     }
   }
 
