@@ -92,13 +92,17 @@ function copyToClipboard(copyText: string) {
             >Wiki 文档
             <t-icon class="icon" name="chevron-right" />
           </a>
-          <a
+          <!-- <a
             class="menu-item"
             target="_blank"
             href="https://www.kookapp.cn/app/invite/m8dAVg"
             >KOOK 频道
             <t-icon class="icon" name="chevron-right" />
-          </a>
+          </a> -->
+        </t-space>
+
+        <t-space class="server-banner">
+          <iframe style="width:728px;height:90px;max-width:100%;border:none;display:block;margin:auto" src="https://namemc.com/server/play.kelemc.fun/embed" width="728" height="90"></iframe>
         </t-space>
       </div>
       <footer class="footer">
